@@ -18,9 +18,10 @@ const commentSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     }
-}, {
+}, 
+{
     timestamps: true
-});
+})
 
 const campsiteSchema = new Schema({
     name: {
@@ -50,7 +51,8 @@ const campsiteSchema = new Schema({
         default: false
     },
     comments: [commentSchema]
-}, {
+},
+{
     timestamps: true
 });
 
